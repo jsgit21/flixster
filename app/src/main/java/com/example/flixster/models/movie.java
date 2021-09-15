@@ -19,10 +19,23 @@ public class movie {
         overview = jsonObject.getString("overview");
     }
 
-    public static List<movie> fromJsonArray(JSONArray movieJsonArray){
+    public static List<movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
         List<movie> movies = new ArrayList<>();
         for( int i = 0; i < movieJsonArray.length(); i++) {
             movies.add(new movie(movieJsonArray.getJSONObject(i)));
         }
+        return movies;
+    }
+
+    public String getPosterPath() {
+        return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getOverview() {
+        return overview;
     }
 }
