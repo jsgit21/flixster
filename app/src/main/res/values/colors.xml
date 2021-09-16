@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="prim_red_1">#d32f2f</color>
+    <color name="prim_red_2">#ff6659</color>
+    <color name="prim_red_3">#9a0007</color>
+    <color name="sec_red_1">#e57373</color>
+    <color name="sec_red_2">#ffa4a2</color>
+    <color name="sec_red_3">#af4448</color>
 </resources>
